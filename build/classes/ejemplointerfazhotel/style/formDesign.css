@@ -1,0 +1,53 @@
+
+.mainContainer{
+    -fx-background-image: url("/fondo.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 900 506;
+    -fx-background-position: center center;
+}
+.fieldsetForm{
+    -fx-background-color: rgba(230, 227, 227, 0.95);
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.fieldsetForm .label{
+    -fx-font-weight: bold;
+    -fx-font-family: "Noto Sans";
+}
+/*Elementos globales de la aplicacion*/
+.button , .combo-box , .userInput , .text-field{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+.button:focused, .combo-box:focused, .userInput:focused, .text-field:focused{
+    -fx-border-color: rgba(39, 174, 245, 0.8);
+}
+
+.button:hover, .combo-box .list-cell:hover{
+    -fx-background-color: rgba(233, 233, 233, 0.8);
+    -fx-text-fill: black;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 5px;
+}
+.spinner{
+    -fx-background-color: white;
+    
+}
+
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button, .date-picker .arrow-button {
+    -fx-border-color: black;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-border-width: 1px;
+    -fx-background-color: white; /* Esto cambiará el color de fondo del botón de incremento */
+}
+
+
