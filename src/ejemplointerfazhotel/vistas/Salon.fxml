@@ -13,18 +13,18 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="mainContainer" prefHeight="597.0" prefWidth="573.0" stylesheets="@../style/formDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejemplointerfazhotel.vistas.SalonController">
+<AnchorPane id="AnchorPane" fx:id="mainContainer" prefHeight="597.0" prefWidth="573.0" stylesheets="@../style/formDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejemplointerfazhotel.controllers.SalonController">
    <children>
       <Pane fx:id="containerPane" prefHeight="596.0" prefWidth="574.0" styleClass="mainContainer">
          <children>
             <ImageView fitHeight="633.0" fitWidth="607.0" layoutX="-25.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../doodad.jpg" />
+                  <Image url="@../style/img/doodad.jpg" />
                </image>
             </ImageView>
             <Pane layoutX="28.0" layoutY="22.0" prefHeight="178.0" prefWidth="517.0" styleClass="fieldsetForm">
                <children>
-                  <Label alignment="CENTER" layoutX="94.0" layoutY="14.0" prefHeight="23.0" prefWidth="316.0" text="DATOS DE CONTACTO" textAlignment="CENTER">
+                  <Label alignment="CENTER" layoutX="94.0" layoutY="14.0" prefHeight="23.0" prefWidth="316.0" text="DATOS DE CONTACTO " textAlignment="CENTER">
                      <font>
                         <Font size="20.0" />
                      </font>

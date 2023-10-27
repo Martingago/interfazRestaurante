@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejemplointerfazhotel;
+package ejemplointerfazhotel.controllers;
 
 import java.io.IOException;
 import java.net.URL;
@@ -42,12 +42,12 @@ public class FormularioPrincipalController implements Initializable {
 
     public void handlebtnReservas(ActionEvent event) throws IOException {
         Stage stage = (Stage) btnReservas.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("FormularioPrincipal.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/ejemplointerfazhotel/vistas/FormularioPrincipal.fxml"));
         if (event.getSource() == btnReservas) {
             //Obtener referencia a la Escena del botón         
             stage = (Stage) btnReservas.getScene().getWindow();
             //cargar el otro documento, en este caso la segundo pantalla
-            root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/ejemplointerfazhotel/vistas/FXMLDocument.fxml"));
          
         }
 

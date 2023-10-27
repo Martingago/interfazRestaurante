@@ -1,6 +1,6 @@
 
 .mainContainer{
-    -fx-background-image: url("/fondo.jpg");
+    -fx-background-image: url("/vistas/fondo.jpg");
     -fx-background-repeat: stretch;
     -fx-background-size: 900 506;
     -fx-background-position: center center;

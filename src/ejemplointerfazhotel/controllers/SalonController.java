@@ -1,4 +1,4 @@
-package ejemplointerfazhotel.vistas;
+package ejemplointerfazhotel.controllers;
 
 import ejemplointerfazhotel.utilidades.Utilidades;
 import java.io.IOException;

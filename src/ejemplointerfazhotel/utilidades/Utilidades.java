@@ -39,7 +39,7 @@ public class Utilidades {
     public static void goIndex(Node node) {
         try {
             // Cargar la escena de Scene Builder
-            Parent root = FXMLLoader.load(Utilidades.class.getResource("/ejemplointerfazhotel/FormularioPrincipal.fxml"));
+            Parent root = FXMLLoader.load(Utilidades.class.getResource("/ejemplointerfazhotel/vistas/FormularioPrincipal.fxml"));
             // Crear una nueva escena con la escena cargada
             Scene scene = new Scene(root);
             // Obtener la ventana (Stage) del nodo
