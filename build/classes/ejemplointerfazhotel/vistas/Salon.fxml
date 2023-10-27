@@ -79,7 +79,7 @@
             </Pane>
             <Pane layoutX="28.0" layoutY="536.0" prefHeight="37.0" prefWidth="517.0" styleClass="fieldsetForm">
                <children>
-                  <Button fx:id="btnConfirm" layoutX="398.0" layoutY="6.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Realizar reserva" />
+                  <Button fx:id="btnConfirm" layoutX="398.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleConfirmationView" prefHeight="25.0" prefWidth="105.0" text="Realizar reserva" />
                   <Button fx:id="btnCancel" layoutX="274.0" layoutY="6.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="25.0" prefWidth="105.0" text="Cancelar" />
                </children>
             </Pane>

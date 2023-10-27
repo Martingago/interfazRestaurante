@@ -104,7 +104,7 @@
       <RadioButton layoutX="66.0" layoutY="568.0" mnemonicParsing="false" text="Pensión completa" toggleGroup="$Opciones" />
       <TextField layoutX="196.0" layoutY="452.0" prefHeight="25.0" prefWidth="38.0" />
       <ComboBox fx:id="comboBox" layoutX="372.0" layoutY="452.0" prefHeight="25.0" prefWidth="205.0" />
-      <Button layoutX="335.0" layoutY="573.0" mnemonicParsing="false" text="Aceptar" />
+      <Button fx:id="btnConfirm" layoutX="335.0" layoutY="573.0" mnemonicParsing="false" onAction="#confirm" text="Aceptar" />
       <Button fx:id="btnSalir" layoutX="409.0" layoutY="573.0" mnemonicParsing="false" onAction="#cerrar" text="Cancelar" />
       
     </children>

@@ -1,0 +1,20 @@
+
+.contentContainer{
+    -fx-background-image: url("img/menu-inicio-bg.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.mainTitle{
+    -fx-font-weigth: bold;
+    -fx-background-color: rgba(255,255,255,.8);
+    -fx-background-radius: 5px;
+}
+
+.SectionButtons{
+    -fx-background-color: rgba(255,255,255, .8);
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-border-color: rgba(240,240,240, .8);
+}

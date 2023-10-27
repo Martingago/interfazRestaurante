@@ -16,6 +16,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
 /**
@@ -34,6 +35,9 @@ public class FormularioPrincipalController implements Initializable {
     private Button btnSalir;
     @FXML
     private Button btnSalon;
+    
+    @FXML private MenuItem submenuSalon;
+    @FXML private MenuItem submenuReservas;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -41,18 +45,18 @@ public class FormularioPrincipalController implements Initializable {
     }
 
     public void handlebtnReservas(ActionEvent event) throws IOException {
-        Stage stage = (Stage) btnReservas.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("/ejemplointerfazhotel/vistas/FormularioPrincipal.fxml"));
+        Stage stage = null;
+        //Parent root = FXMLLoader.load(getClass().getResource("/ejemplointerfazhotel/vistas/FormularioPrincipal.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/ejemplointerfazhotel/vistas/FXMLDocument.fxml")); 
+        Scene scene = new Scene(root);
         if (event.getSource() == btnReservas) {
             //Obtener referencia a la Escena del botón         
             stage = (Stage) btnReservas.getScene().getWindow();
-            //cargar el otro documento, en este caso la segundo pantalla
-            root = FXMLLoader.load(getClass().getResource("/ejemplointerfazhotel/vistas/FXMLDocument.fxml"));
-         
+        } else if(event.getSource() == submenuReservas){
+            //Ya que un MenuItem no permite abrir una scena lo hacemos con la referencia de btnReservas
+            stage = (Stage) btnReservas.getScene().getWindow();
         }
-
         //Crear una nueva escena con raíz y establecer el escenario
-        Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
@@ -61,7 +65,13 @@ public class FormularioPrincipalController implements Initializable {
     public void handleBtnSalon(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/ejemplointerfazhotel/vistas/Salon.fxml"));
         Scene scene = new Scene(root);
-        Stage stage = (Stage) btnSalon.getScene().getWindow();
+        Stage stage = null;
+        if(event.getSource() == btnSalon){
+           stage = (Stage) btnSalon.getScene().getWindow();
+        } else if(event.getSource() == submenuSalon){
+            stage = (Stage) btnSalon.getScene().getWindow();
+        }
+        
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
